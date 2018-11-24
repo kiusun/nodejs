@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Mem Group Token</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/style/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/style/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+	<style>
+		input[type=text]{
+			width: 100%;
+			height: 5%;
+		}
+	</style>
+</head>
+<body>
+	<%- include header.ejs %>
+
+    <div class="container-fluid" style="margin-top: 70px">
+		<div class="row-fluid">
+			<div class="span10 offset1">
+				<div class="row-fluid">
+					<div class="span9">
+						<label>Điền list token</label>
+						<textarea id="list_token" rows="6" style="width: 100%"></textarea>
+						<label>Điền list UID</label>
+						<textarea id="list_uid" rows="6" style="width: 100%"></textarea>
+					</div>
+					<div class="span3">
+						<label>Giữa mỗi lần add member (s)</label>
+						<input id="time_member" type="text" class="input-small text-center" value="1">
+						<label>Giữa mỗi token (s)</label>
+						<input id="time_token" type="text" class="input-small text-center" value="8">
+						<label>Số member add mỗi token (Điền 0 nếu muốn add FULL)</label>
+						<input id="limit_member" type="text" class="input-small text-center" value="700">
+						<hr style="margin: 10px;" />
+						<button type="button" class="btn btn-large" id="btn_start">BẮT ĐẦU</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="row-fluid">
+			<div class="span10 offset1">
+				<h2 class="sub-header">List Token</h2>
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th style="text-align: center">#</th>
+							<th style="text-align: center">Success</th>
+							<th>Status</th>
+							<th>Friends</th>   
+							<th>Token</th>
+						</tr>
+                    </thead>
+					<tbody id="tbody"></tbody>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	<script src="/style/js/jquery.js"></script>
+	<script src="/style/js/jquery.cookie.js"></script>
+	<script src="/style/css/bootstrap.min.js"></script>
+	<script src="/js/add.js"></script>
+  </body>
+</html>
