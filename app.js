@@ -8,7 +8,7 @@ app.get("/addfriend", function(req , res){
     res.render("addfriend");
 });
 app.get("/getuid", function(req , res){
-    res.render("getiud");
+    res.render("getuid");
 });
 app.listen(8080 , function(){
     console.log("serve is running on port 8080");
