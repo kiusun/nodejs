@@ -5,11 +5,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set("view engine", "ejs");
 app.set("views" , __dirname + "/views");
 app.get("/addfriend", function(req , res){
-    res.render("addfriend",{title: "hêlelo"});
-  
-    
+    res.render("addfriend");
 });
-
+app.get("/getuid", function(req , res){
+    res.render("getiud");
+});
 app.listen(8080 , function(){
     console.log("serve is running on port 8080");
 });

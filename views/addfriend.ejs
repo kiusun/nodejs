@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Add Mem Group Token</title>
+	<title>Add Friends</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/style/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="/style/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
@@ -27,11 +27,9 @@
 					</div>
 					<div class="span3">
 						<label>Giữa mỗi lần add member (s)</label>
-						<input id="time_member" type="text" class="input-small text-center" value="1">
+						<input id="time_add_friend" type="text" class="input-small text-center" value="10">
 						<label>Giữa mỗi token (s)</label>
-						<input id="time_token" type="text" class="input-small text-center" value="8">
-						<label>Số member add mỗi token (Điền 0 nếu muốn add FULL)</label>
-						<input id="limit_member" type="text" class="input-small text-center" value="700">
+						<input id="limit_uid" type="text" class="input-small text-center" value="50">
 						<hr style="margin: 10px;" />
 						<button type="button" class="btn btn-large" id="btn_start">BẮT ĐẦU</button>
 					</div>
@@ -46,9 +44,9 @@
 					<thead>
 						<tr>
 							<th style="text-align: center">#</th>
-							<th style="text-align: center">Success</th>
+							<th style="text-align: center">Success | Fails</th>
 							<th>Status</th>
-							<th>Friends</th>   
+							<th>Name</th>   
 							<th>Token</th>
 						</tr>
                     </thead>
